@@ -87,12 +87,16 @@
 <meta property="og:site_name" content="dongheng&#39;s blog">
 <meta property="og:description" content="1.  前言之前也尝试搭建过基于WordPress的个人博客网站，后来也没维护过，就不了了之，偶然一天发现同学朋友圈分享的个人博客网站，打开之后耳目一新，便询问之怎么做的，同学告知是基于Hexo+GitHub+Mac搭建的。于是，就在心里种下了草，心想我也要搭建一个个人博客，这样可以把自己学习过的知识点记录下来，也可以写一些自己想写的其他一些东西，于是便有了这个个人博客。此篇博客的大部分参考了ht">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://pbc08qnfq.bkt.clouddn.com/images/%E4%B8%83%E7%89%9B%E4%BA%91%E5%BC%95%E7%94%A8.png">
 <meta property="og:image" content="http://pbc08qnfq.bkt.clouddn.com/images/leancloud%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87.png">
-<meta property="og:updated_time" content="2018-07-15T03:36:53.000Z">
+<meta property="og:image" content="http://pbc08qnfq.bkt.clouddn.com/images/leancloud%E7%9A%84app_id&&app_key.png">
+<meta property="og:image" content="http://pbc08qnfq.bkt.clouddn.com/images/hexo%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="http://pbc08qnfq.bkt.clouddn.com/images/hexo%E5%BC%80%E5%90%AF%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:updated_time" content="2018-07-15T06:53:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo博客搭建">
 <meta name="twitter:description" content="1.  前言之前也尝试搭建过基于WordPress的个人博客网站，后来也没维护过，就不了了之，偶然一天发现同学朋友圈分享的个人博客网站，打开之后耳目一新，便询问之怎么做的，同学告知是基于Hexo+GitHub+Mac搭建的。于是，就在心里种下了草，心想我也要搭建一个个人博客，这样可以把自己学习过的知识点记录下来，也可以写一些自己想写的其他一些东西，于是便有了这个个人博客。此篇博客的大部分参考了ht">
-<meta name="twitter:image" content="http://pbc08qnfq.bkt.clouddn.com/images/leancloud%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87.png">
+<meta name="twitter:image" content="http://pbc08qnfq.bkt.clouddn.com/images/%E4%B8%83%E7%89%9B%E4%BA%91%E5%BC%95%E7%94%A8.png">
 
 
 
@@ -454,9 +458,26 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Table Of Contents in the Sidebar</span><br><span class="line">toc:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br><span class="line">  # Automatically add list number to toc.</span><br><span class="line">  number: false          #改成false即可</span><br></pre></td></tr></table></figure>
 <h1 id="10-插入图片"><a href="#10-插入图片" class="headerlink" title="10 插入图片"></a>10 插入图片</h1><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">width</span>=<span class="string">""</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>插入如上所示代码，可以调节图片大小格式位置等</p>
-<h1 id="11-添加评论和博客阅读统计"><a href="#11-添加评论和博客阅读统计" class="headerlink" title="11 添加评论和博客阅读统计"></a>11 添加评论和博客阅读统计</h1><p>首先在leancloud注册一个账号，<a href="https://leancloud.cn" target="_blank" rel="noopener">leancloud官网</a>，注册完成后，创建新应用，新应用的名字无所谓，然后在新应用里创建新的class，class的名字须为counter，</p>
+<p>将七牛云作为图床，可以去参考这篇博客的设置说明，<a href="http://skyhacks.org/2017/08/02/UseQiniudnToStorePic/" target="_blank" rel="noopener">七牛云图床设置</a>，这里简要记录下平时同步图片到云端的操作。</p>
+<p>将图片存储到 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/myblog/blog/source/qiniudn/images</span><br></pre></td></tr></table></figure>
+<p>文件夹里，</p>
+<p>使用如下命令在项目根目录进行下同步：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">hexo s    #第一种方式</span><br><span class="line">hexo qiniu sync|sync2  #第二种方式</span><br><span class="line"></span><br><span class="line">#以下就是解释</span><br><span class="line">qiniu sync plugin for hexo</span><br><span class="line">Usage: hexo qiniu  &lt;argument&gt;</span><br><span class="line">Description:</span><br><span class="line">hexo qiniu static files sync plugin</span><br><span class="line">Arguments:</span><br><span class="line">  info | i    Displays plugin version, aurthor or GitHub links</span><br><span class="line">  sync | s    Sync your static files to qiniu.</span><br><span class="line">  sync2 | s2  Sync your static files to qiniu.(And uploaded update files)</span><br></pre></td></tr></table></figure>
+<p>同步完成后，本地图片删除，云端也不会删除。</p>
+<p>打开自己的七牛云</p>
+<p><img src="http://pbc08qnfq.bkt.clouddn.com/images/%E4%B8%83%E7%89%9B%E4%BA%91%E5%BC%95%E7%94%A8.png"></p>
+<p>复制外链后，然后在写博客时，引用即可。</p>
+<h1 id="11-添加评论和博客阅读统计"><a href="#11-添加评论和博客阅读统计" class="headerlink" title="11 添加评论和博客阅读统计"></a>11 添加评论和博客阅读统计</h1><p>首先在leancloud注册一个账号，<a href="https://leancloud.cn" target="_blank" rel="noopener">leancloud官网</a>，注册完成后，创建新应用，新应用的名字无所谓，然后在新应用里创建新的class，class的名字须为counter</p>
 <p><img src="http://pbc08qnfq.bkt.clouddn.com/images/leancloud%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87.png"></p>
 <p>如图所示，右上角的设置按钮，点进去，创建新的class，并在里面</p>
+<p><img src="http://pbc08qnfq.bkt.clouddn.com/images/leancloud%E7%9A%84app_id&&app_key.png"></p>
+<p>在设置里找到app id与app key,然后在/themes/next/_config.yml文件内</p>
+<p>开启评论设置：</p>
+<p><img src="http://pbc08qnfq.bkt.clouddn.com/images/hexo%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E8%AE%BE%E7%BD%AE.png"></p>
+<p>开启统计数据设置：</p>
+<p><img src="http://pbc08qnfq.bkt.clouddn.com/images/hexo%E5%BC%80%E5%90%AF%E7%BB%9F%E8%AE%A1%E6%95%B0%E6%8D%AE%E8%AE%BE%E7%BD%AE.png"></p>
+<p>设置完成后，再终端同步部署一下，即可。</p>
 <p>未完待续..</p>
 
       
