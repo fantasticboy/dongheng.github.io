@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title>小知识点记录</title>
+      <link href="/2018/08/24/%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AE%B0%E5%BD%95/"/>
+      <url>/2018/08/24/%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9%E8%AE%B0%E5%BD%95/</url>
+      <content type="html"><![CDATA[<h1 id="在Mac上安装PhantomJS"><a href="#在Mac上安装PhantomJS" class="headerlink" title="在Mac上安装PhantomJS"></a>在Mac上安装PhantomJS</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew update &amp;&amp; brew install phantomjs</span><br></pre></td></tr></table></figure><p>在终端测试，出现如下：</p><p><img src="http://pbc08qnfq.bkt.clouddn.com/images/phantomjs%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.png" alt="phantomjs成功安装图片"></p><p>如果出现错误，尝试：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew link --overwrite phantomjs</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>lucene学习笔记</title>
       <link href="/2018/08/21/lucene%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/2018/08/21/lucene%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
