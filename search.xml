@@ -15,7 +15,7 @@
       <title>lucene学习笔记</title>
       <link href="/2018/08/21/lucene%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
       <url>/2018/08/21/lucene%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<h1 id="lucene查询语法"><a href="#lucene查询语法" class="headerlink" title="lucene查询语法"></a>lucene查询语法</h1><p><img src="http://pbc08qnfq.bkt.clouddn.com/images/lucene%E8%AF%AD%E6%B3%95%E4%B8%80.png" alt="lucene查询语法"></p><p><img src="http://pbc08qnfq.bkt.clouddn.com/images/lucene%E8%AF%AD%E6%B3%95%E4%BA%8C.png" alt=""></p>]]></content>
+      <content type="html"><![CDATA[<h1 id="lucene查询语法"><a href="#lucene查询语法" class="headerlink" title="lucene查询语法"></a>lucene查询语法</h1><p><img src="http://pbc08qnfq.bkt.clouddn.com/images/lucene%E8%AF%AD%E6%B3%95%E4%B8%80.png" alt="lucene查询语法"></p><p><img src="http://pbc08qnfq.bkt.clouddn.com/images/lucene%E8%AF%AD%E6%B3%95%E4%BA%8C.png" alt=""></p><h1 id="使用工具lukeall-4-10-3-jar"><a href="#使用工具lukeall-4-10-3-jar" class="headerlink" title="使用工具lukeall-4.10.3.jar"></a>使用工具lukeall-4.10.3.jar</h1><p>在终端目标目录下，输入java -jar lukeall-4.10.3.jar 即可</p>]]></content>
       
       
     </entry>
